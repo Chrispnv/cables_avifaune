@@ -73,5 +73,30 @@ Création de trois types d'entités:
 - Edit: entités utilisées uniquement pendant la saisie  (ex: Edit.TEquipementsPoteauxErdf.orm )
 - View: entités utilisées dans l'affichage (liste et détail) des données (ex: View.TInventaireTronconsErdfView.orm )
 
+## Suppression de ExtBundle
+
+Ce bundle était conçu pour gérer toutes les entités des dictionnaires. Il ne sert plus rien à présent. 
+
+- suppression dans app/AppKernel.php 
+```javascript
+ class AppKernel extends Kernel
+{
+    public function registerBundles()
+    {
+        $bundles = array(
+            new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
+            new Symfony\Bundle\SecurityBundle\SecurityBundle(),
+            new Symfony\Bundle\TwigBundle\TwigBundle(),
+            new Symfony\Bundle\MonologBundle\MonologBundle(),
+            new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
+            new Symfony\Bundle\AsseticBundle\AsseticBundle(),
+            new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
+            new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            new Commons\UsersBundle\CommonsUsersBundle(),
+            new PNV\CablesBundle\PNVCablesBundle(),   
+            //new PNV\ExtBundle\PNVExtBundle(),         
+        );
+       
+```
 
 
