@@ -110,4 +110,8 @@ pnv_ext:
 
 ## Affichage données par ManyToOne
 Gestion des variables : ajout d'un test (is_null ) pour retourner le JSON si la valeur est null
-
+voir CablesBundles/Services
+exemple: 
+```php
+$out_item['zone_sensible']= !is_null($info->getZoneSensible())?->getZoneSensible()->getNomZoneSensible():'';
+```
