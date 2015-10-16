@@ -102,4 +102,6 @@ Ce bundle était conçu pour gérer toutes les entités des dictionnaires. Il ne
 ```
 - suppression du répertoire dans scr/PNV
 
+## Affichage données par ManyToOne
+Gestion des variables : ajout d'un controle (is_null ) pour retourner le JSON si la valeur est null
 
