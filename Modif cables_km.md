@@ -69,9 +69,9 @@ b- Dans AngularJs
 ### Mise à jour des orm et entités dans Symfony 
 (voir CablesBundle/Entity et Ressources/config/doctrine) 
 Création de trois types d'entités:
-- Dico : tous les dictionnaires
-- Edit: entités utilisées uniquement pendant la saisie 
-- View: entités utilisées dans l'affichage (liste et détail) des données
+- Dico : tous les dictionnaires (ex: Dico.DicoCauseMortalite.orm )
+- Edit: entités utilisées uniquement pendant la saisie  (ex: Edit.TEquipementsPoteauxErdf.orm )
+- View: entités utilisées dans l'affichage (liste et détail) des données (ex: View.TInventaireTronconsErdfView.orm )
 
 
 
