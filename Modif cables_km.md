@@ -73,6 +73,8 @@ Création de trois types d'entités:
 - Edit: entités utilisées uniquement pendant la saisie  (ex: Edit.TEquipementsPoteauxErdf.orm )
 - View: entités utilisées dans l'affichage (liste et détail) des données (ex: View.TInventaireTronconsErdfView.orm )
 
+NB: Mise à jour des contrôleurs et services pour récuperer les nouvelles entités.
+
 ## Suppression de ExtBundle
 
 Ce bundle était conçu pour gérer toutes les entités des dictionnaires. Il ne sert plus rien à présent. 
