@@ -98,6 +98,6 @@ Ce bundle était conçu pour gérer toutes les entités des dictionnaires. Il ne
         );
        
 ```
-- suppression du répertoire 
+- suppression du répertoire dans scr/PNV
 
 
