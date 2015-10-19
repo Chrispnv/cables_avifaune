@@ -104,8 +104,8 @@ $repo = $this->getDoctrine()->getRepository('PNVCablesBundle:Dico\DicoSexe');
 - Initialisation dans le formulaire (YAML):
 ```yaml
 -   name: sexe
-label: Sexe
-type: selectLib # selectLib permet d'envoyer le libelle 
+    label: Sexe
+    type: selectLib 
  ```
 
 ## 5- Affichage libelle d'une relation ManyToOne
