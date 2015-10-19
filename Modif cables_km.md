@@ -100,7 +100,16 @@ $repo = $this->getDoctrine()->getRepository('PNVCablesBundle:Dico\DicoSexe');
    }
  }
 ```
-## Suppression de ExtBundle
+
+## 5- Affichage libelle d'une relation ManyToOne
+Gestion des variables : ajout d'un test (is_null ) pour retourner le JSON si la valeur est null
+voir CablesBundles/Services
+exemple: 
+```php
+$out_item['zone_sensible']= !is_null($info->getZoneSensible())?->getZoneSensible()->getNomZoneSensible():'';
+```
+
+## 6- Suppression de ExtBundle
 
 Ce bundle était conçu pour gérer toutes les entités des dictionnaires. Il ne sert plus rien à présent. 
 
@@ -133,10 +142,3 @@ pnv_ext:
 ```
 - suppression du répertoire dans scr/PNV
 
-## 5- Affichage libelle d'une relation ManyToOne
-Gestion des variables : ajout d'un test (is_null ) pour retourner le JSON si la valeur est null
-voir CablesBundles/Services
-exemple: 
-```php
-$out_item['zone_sensible']= !is_null($info->getZoneSensible())?->getZoneSensible()->getNomZoneSensible():'';
-```
