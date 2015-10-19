@@ -108,7 +108,7 @@ pnv_ext:
 ```
 - suppression du répertoire dans scr/PNV
 
-## 5- Affichage données par ManyToOne
+## 5- Affichage libelle d'une relation ManyToOne
 Gestion des variables : ajout d'un test (is_null ) pour retourner le JSON si la valeur est null
 voir CablesBundles/Services
 exemple: 
