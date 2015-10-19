@@ -101,6 +101,13 @@ $repo = $this->getDoctrine()->getRepository('PNVCablesBundle:Dico\DicoSexe');
  }
 ```
 
+- Initialisation dans le formulaire (YAML):
+```yaml
+-   name: sexe
+label: Sexe
+type: selectLib # selectLib permet d'envoyer le libelle 
+ ```
+
 ## 5- Affichage libelle d'une relation ManyToOne
 Gestion des variables : ajout d'un test (is_null ) pour retourner le JSON si la valeur est null
 voir CablesBundles/Services
