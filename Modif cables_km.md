@@ -78,7 +78,7 @@ NB: Mise à jour des contrôleurs et services pour récuperer les nouvelles enti
 ### Ajout des dictionaires "Sexe" et "Age"
 
 - Récupération et affichage des dicos : selectLib dans web/js/templates/form/dynform.
--
+
 Le "selectlib" permet d'envoyer le libelle de la liste déroulante contrairement à "select" qui envoit que l'id. 
 ```html
 <select id="{{field.name}}" class="form-control" ng-options="item.libelle as item.libelle for item in field.options.choices" ng-model="data[field.name]" ng-if="field.type=='selectLib' && !field.options.multi" ng-disabled="field.options.readOnly"></select>
