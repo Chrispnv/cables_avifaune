@@ -100,7 +100,7 @@ Ce bundle était conçu pour gérer toutes les entités des dictionnaires. Il ne
         );
        
 ```
--suppression dans app/config/routing.yml
+- suppression dans app/config/routing.yml
 ```yml
 pnv_ext:
     resource: "@PNVExtBundle/Resources/config/routing.yml"
