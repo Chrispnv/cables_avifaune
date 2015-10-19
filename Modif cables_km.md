@@ -75,6 +75,31 @@ Création de trois types d'entités:
 
 NB: Mise à jour des contrôleurs et services pour récuperer les nouvelles entités.
 
+### Ajout des dictionaires "Sexe" et "Age"
+
+- Récupération et affichage des dicos : selectLib dans web/js/templates/form/dynform
+Le "selectlib" permet d'envoyer le libelle de la liste déroulante contrairement à "select" qui envoit que l'id. 
+```html
+<select id="{{field.name}}" class="form-control" ng-options="item.libelle as item.libelle for item in field.options.choices" ng-model="data[field.name]" ng-if="field.type=='selectLib' && !field.options.multi" ng-disabled="field.options.readOnly"></select>
+```
+- Initialisation des dicos dans un contrôleur confif: 
+``` php
+$repo = $this->getDoctrine()->getRepository('PNVCablesBundle:Dico\DicoSexe');
+  $dico3 = $repo->findAll(array());
+  $sexe = array();
+ 
+ foreach($out['groups'] as &$group){
+  foreach($group['fields'] as &$field){
+    if(!isset($field['options'])){
+     $field['options'] = array();
+    }
+    if($field['name'] == 'sexe'){
+     $field['options']['choices'] = $sexe;
+    }
+    
+   }
+ }
+```
 ## Suppression de ExtBundle
 
 Ce bundle était conçu pour gérer toutes les entités des dictionnaires. Il ne sert plus rien à présent. 
