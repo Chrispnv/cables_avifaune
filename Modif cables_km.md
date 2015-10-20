@@ -154,7 +154,7 @@ pnv_ext:
 
 - dans js/templates/form/dynform.html 
 ```html
- ng-req="field.options.req" ng-required="field.options.req=true"
+  <select id="{{field.name}}" class="form-control" ng-options="item.id as item.libelle for item in field.options.choices" ng-model="data[field.name]" ng-if="field.type=='select' && !field.options.multi" ng-req="field.options.req" ng-required="field.options.req=true" ng-disabled="field.options.readOnly"></select>     
  ```
 - ajout du css
 ```css
