@@ -150,3 +150,4 @@ pnv_ext:
 ```
 - suppression du répertoire dans scr/PNV
 
+## 7- Ajout du champs obligatoire pour les select
