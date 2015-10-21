@@ -151,14 +151,14 @@ pnv_ext:
 - suppression du répertoire dans scr/PNV
 
 ## 7- Ajout du champs obligatoire pour les select
-
+ng-obligatoire="field.options.obligatoire
 - dans js/templates/form/dynform.html 
 ```html
-  <select id="{{field.name}}" class="form-control" ng-options="item.id as item.libelle for item in field.options.choices" ng-model="data[field.name]" ng-if="field.type=='select' && !field.options.multi" ng-req="field.options.req" ng-required="field.options.req=true" ng-disabled="field.options.readOnly"></select>     
+  <select id="{{field.name}}" class="form-control" ng-options="item.id as item.libelle for item in field.options.choices" ng-model="data[field.name]" ng-if="field.type=='select'&& !field.options.multi" ng-obligatoire="field.options.obligatoire" ng-required="field.options.obligatoire == true" ng-disabled="field.options.readOnly"></select>        
  ```
 - ajout du css
 ```css
-.css-form select.ng-invalid {
-    border-color: red;
+select:invalid { 
+    border: 2px solid red;
 }
 ```
