@@ -75,7 +75,7 @@ Création de trois types d'entités:
 
 NB: Mise à jour des contrôleurs et services pour récuperer les nouvelles entités.
 
-### Ajout des dictionaires "Sexe" et "Age"
+### Ajout des dictionaires "Sexe", "Age" et Source
 
 - Récupération et affichage des dicos : selectLib dans web/js/templates/form/dynform.
 
