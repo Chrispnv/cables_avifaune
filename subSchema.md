@@ -9,7 +9,7 @@ subSchemaUrl: cables/config/eqpoteauxerdf/list
 subDataUrl: cables/eqpoteauxerdf/ 
 ```
 
-### 2- Equipement poteaux 
+### 2- Equipements poteaux 
 - list.yml
 ```yaml
 title: Equipements poteaux ERDF
@@ -19,3 +19,5 @@ createUrl: "#/cables/edit/eqpoteauxerdf/"
 editUrl: "#/cables/edit/eqpoteauxerdf/"
 detailUrl: "#/cables/eqpoteauxerdf/"
 ```
+
+
