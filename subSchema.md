@@ -1,5 +1,5 @@
 
-### 1- Inventaires tronçons
+### 1- Inventaires poteaux
 
 - detail.yml
 ```yaml
