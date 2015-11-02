@@ -1,7 +1,6 @@
 
 ### 1- Changement de MarkerClusterGroup en featureGroup
-Changement de toutes les couches en featureGroup sauf cas de mortalités
-- detail.yml
+mapServices.js: Changement de toutes les couches en featureGroup sauf cas de mortalités
 ```javascript
 var tabThemaData = {
   "zonessensibles" : L.featureGroup(), 
