@@ -19,3 +19,21 @@ $scope.$on('display:init', function(ev, data){
 
 ```
 
+- Et dans FormDirectives:
+
+```javascript
+                mapService.getLayerControl().addOverlay($scope.editLayer, "Edition");
+                mapService.loadData($scope.options.dataUrl, $scope.options.dataUrl.split("/")[1]).then(function(){
+                    if($scope.origin){
+                        $timeout(function(pThemaData){
+                            var layer = mapService.selectItem($scope.origin, 'mortalites');
+                            if(layer){
+                                setEditLayer(layer);
+                            }
+                        }, 0);
+                    }
+                    mapService.getMap().addLayer($scope.editLayer);
+                    mapService.getMap().removeLayer(mapService.getLayer($scope.options.dataUrl.split("/")[1]));
+                });
+
+```
