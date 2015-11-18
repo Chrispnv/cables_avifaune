@@ -22,3 +22,20 @@ $scope.$on('display:init', function(ev, data){
 - Et dans FormDirectives:
 
 voir les fonction getEditItem et selectEditItem
+
+### 2- Ajout du css pour onglet tableau et corriger afichage détail données == voir app.css
+```css
+/*
+ * Détail tableau
+ */
+.dl-horizontal dt {
+    float: left;
+    margin-right: 10px;
+    width: 300px;
+    overflow: hidden;
+    clear: right;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+```
