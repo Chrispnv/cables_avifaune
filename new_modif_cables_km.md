@@ -1,6 +1,6 @@
 
 ### 1- Correction des erreurs en détail : getItem SelectItem 
-Dans les controlleurs ...DetailCtrl.js, il faut passer la valeur de la couche en cours dans le selectItem qui attend un param
+Dans les controlleurs ...DetailCtrl ou ...EditCtrl, il faut passer la valeur de la couche en cours dans le selectItem qui attend un param
 - Exemple des cas de mortalités
 ```javascript
 $scope.$on('display:init', function(ev, data){
