@@ -1,21 +1,21 @@
 
-### 1- Changement de MarkerClusterGroup en featureGroup
-mapServices.js: Changement de toutes les couches en featureGroup sauf observations
+### 1- Correction des erreurs en détail : getItem SelectItem 
+Dans les controlleurs ...DetailCtrl.js, il faut passer la valeur de la couche en cours dans le selectItem qui attend un param
+- Exemple des cas de mortalités
 ```javascript
-var tabThemaData = {
-  "zonessensibles" : L.featureGroup(), 
-  "mortalites" : L.featureGroup(), 
-  "tronconserdf": L.featureGroup(),
-  "poteauxerdf": L.featureGroup(),
-  "eqtronconserdf": L.featureGroup(),
-  "eqpoteauxerdf": L.featureGroup(),
-  "nidifications": L.featureGroup(),
-  "observations": L.markerClusterGroup(),
-  "erdfappareilcoupure": L.featureGroup(),
-  "ogmcablesremonteesmecaniques": L.featureGroup(),
-  "rtelignes": L.featureGroup(),
+$scope.$on('display:init', function(ev, data){
+        mapService.initializeCarte('js/resources/defaultMap.json').then(function(){
+            mapService.loadData($scope._appName + '/mortalites', "mortalites").then(
+                function(){                    
+                    document.getElementById("mortalites").checked = true;
+                    mapService.displayGeomData("mortalites");
+                    storeFlag.setFlagLayer("mortalites", "cacheChecked");
+                    mapService.selectItem($routeParams.id, 'mortalites'); 
+                });
+            $scope.title = data.espece;
+        });
+    });
 };
 
 ```
 
-### 2- Gestion de la couleur des couches
