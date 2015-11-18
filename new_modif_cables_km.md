@@ -1,5 +1,5 @@
 
-### 1- Correction des erreurs en détail : getItem SelectItem 
+### 1- Correction des erreurs géom en détail et édition : getItem SelectItem 
 Dans les controlleurs ...DetailCtrl ou ...EditCtrl, il faut passer la valeur de la couche en cours dans le selectItem qui attend un param
 - Exemple des cas de mortalités
 ```javascript
