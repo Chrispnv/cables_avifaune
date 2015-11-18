@@ -62,4 +62,10 @@ voir les fonction getEditItem et selectEditItem
   border-bottom-color: transparent;
 }
 /********************************************************************/
+
+/****** Titre en détail */
+.editDetailButton{
+  float:right;
+  margin-top:35px;
+}
 ```
