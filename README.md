@@ -1,6 +1,5 @@
 # Projet Avifaune/câbles dangereux
 
-[Site du projet](http://xaadim.github.io/Projet_dev_appli_cables)
 
 ## Développement d'une application de cartographie interactive sur internet
 
