@@ -1,0 +1,39 @@
+title: Inventaires Poteaux ERDF
+emptyMsg: Chargement des données...
+createBtnLabel: Nouveau 
+createUrl: "#/cables/edit/poteauxerdf/"
+editUrl: "#/cables/edit/poteauxerdf/"
+detailUrl: "#/cables/poteauxerdf/"
+editAccess: 5
+fields: 
+    -   name: id 
+        label: ID
+        filter: 
+            id: text
+        options: 
+            visible: false
+    -   name: dateInventaire
+        label: Date Inventaire
+        filter: 
+            dateInventaire: text
+        options:
+            visible: true
+    -   name: nb_equipement
+        label: Nb équipement 
+        filter: 
+            etatPoteau: text
+        options:
+            visible: true
+    -   name: risquePoteau
+        label: Risque poteau 
+        filter: 
+            risquePoteau: text
+        options:
+            visible: true
+    -   name: commune
+        label: Commune 
+        filter: 
+            commune: text
+        options:
+            visible: true
+

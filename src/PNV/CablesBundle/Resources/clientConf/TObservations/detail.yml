@@ -1,0 +1,24 @@
+# editAccess: 3
+# subEditAccess: 2
+# deleteAccess: 5
+groups:
+    -   name: Informations
+        fields:
+            -   name: date
+                label: "Date d'observation"
+                type: date
+            -   name: lieu
+                label: "Lieu" 
+                type: string 
+            -   name: espece
+                label: "Nom de l'espèce" 
+                type: string
+            -   name: commentaires
+                label: commentaires
+                type: string
+            -   name: precisionLoc
+                label: Précision Loc # à changer 
+                type: string
+            -   name: nombre
+                label: Nombre d'observation 
+                type: string

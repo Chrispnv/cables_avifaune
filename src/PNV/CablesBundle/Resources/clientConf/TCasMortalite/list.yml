@@ -1,0 +1,59 @@
+title: Cas de mortalité
+emptyMsg: Chargement des données...
+createBtnLabel: Nouveau cas
+createUrl: "#/cables/edit/mortalites/"
+editUrl: "#/cables/edit/mortalites/"
+detailUrl: "#/cables/mortalites/"
+editAccess: 5
+fields: 
+    -   name: id
+        label: ID
+        filter: 
+            id_cas_mortalite: text
+        options: 
+            visible: true
+    -   name: espece
+        label: Especes
+        filter: 
+            espece: text
+        options:
+            visible: true
+    -   name: cause_mortalite
+        label: Cause mortalité
+        filter: 
+            source: text
+        options:
+            visible: true
+    -   name: source
+        label: Source
+        filter: 
+            source: text
+        options:
+            visible: true
+    -   name: nb_cas
+        label: Nombre de cas 
+        filter: 
+            nb_cas: text
+        options:
+            visible: true
+    -   name: sexe
+        label: Sexe
+        filter: 
+            sexe: text
+        options:
+            visible: true
+    -   name: age
+        label: Âge
+        filter:
+            age: text
+        option:
+            visible: true
+    -   name: date
+        label: Date
+        filter:
+            date: text
+        option:
+            visible: true
+
+
+

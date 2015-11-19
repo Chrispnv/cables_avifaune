@@ -1,0 +1,39 @@
+title: Inventaires Troncons ERDF
+emptyMsg: Chargement des données...
+createBtnLabel: Nouveau 
+createUrl: "#/cables/edit/tronconserdf/"
+editUrl: "#/cables/edit/tronconserdf/"
+detailUrl: "#/cables/tronconserdf/"
+editAccess: 5
+fields: 
+    -   name: id 
+        label: ID
+        filter: 
+            id: text
+        options: 
+            visible: false
+    -   name: dateInventaire
+        label: Date Inventaire
+        filter: 
+            dateInventaire: text
+        options:
+            visible: true
+    -   name: remarques
+        label: Remarques 
+        filter: 
+            remarques: text
+        options:
+            visible: true
+    -   name: risqueTroncon
+        label: Risque tronçon 
+        filter: 
+            risqueTroncon: text
+        options:
+            visible: true
+    -   name: commune
+        label: Commune 
+        filter: 
+            commune: text
+        options:
+            visible: true
+

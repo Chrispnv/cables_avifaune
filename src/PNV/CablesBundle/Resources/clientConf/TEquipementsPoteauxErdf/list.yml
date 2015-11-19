@@ -1,0 +1,34 @@
+title: Equipements poteaux ERDF
+emptyMsg: "Aucun équipement"
+createBtnLabel: "Nouvel équipement"
+createUrl: "#/cables/edit/poteauxerdf/eqpoteauxerdf/"
+editUrl: "#/cables/edit/eqpoteauxerdf/"
+detailUrl: "#/cables/eqpoteauxerdf/"
+editAccess: 2
+fields: 
+    -   name: id 
+        label: ID
+        filter: 
+            id: text
+        options: 
+            visible: false
+    -   name: type_equipement_poteau
+        label: Type d'équipement
+        filter: 
+            type_equipement_poteau: text
+        options:
+            visible: true
+    -   name: misEnPlace
+        label: Mise en place
+        filter:
+            misEnPlace: text
+        options:
+            visible: true
+    -   name: dateEquipement
+        label: Date d'équipement
+        filter:
+            dateEquipement: text
+        options:
+            visible: true
+
+

@@ -1,0 +1,17 @@
+<div class="row" ng-controller="mortalitesTabCtrl">
+<div maplist="cables/mortalites">
+
+  <div class="padded">
+     <div tablewrapper class="table" schema="schema" data="data" refname="cables/mortalites">
+    <!-- Boutton new -->
+    <a class="btn btn-success" style="margin-right: 1ex;" ng-if="editAccess" ng-href="{{schema.createUrl}}">{{schema.createBtnLabel}} <span class="glyphicon glyphicon-plus"></a></br>
+      {{ title }}
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+
+  

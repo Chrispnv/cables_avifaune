@@ -1,0 +1,48 @@
+title: Observations
+emptyMsg: Aucune donnée
+detailUrl: "#/cables/observations/"
+fields: 
+    -   name: id 
+        label: ID
+        filter: 
+            id: text
+        options: 
+            visible: false
+    -   name: lieu 
+        label: Lieu
+        filter: 
+            lieu: text
+        options: 
+            visible: true
+    -   name: espece 
+        label: Espèce
+        filter: 
+            espece: text
+        options: 
+            visible: true
+    -   name: date
+        label: Date 
+        filter: 
+            date: text
+        options:
+            visible: true
+    -   name: commentaires
+        label: Commentaires 
+        filter: 
+            commentaires: text
+        options:
+            visible: true
+    -   name: precisionLoc
+        label: Précision Loc # à changer 
+        filter: 
+            precisionLoc: text
+        options:
+            visible: true
+    -   name: nombre
+        label: Nombre
+        help: Nombre d'observation
+        filter: 
+            Nombre: text
+        options:
+            visible: true
+

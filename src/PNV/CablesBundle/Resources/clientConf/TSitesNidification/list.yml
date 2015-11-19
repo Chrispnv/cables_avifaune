@@ -1,0 +1,17 @@
+title: Sites de nidification
+emptyMsg: Aucune donnée
+detailUrl: "#/cables/nidifications/"
+fields: 
+    -   name: id 
+        label: ID
+        filter: 
+            id: text
+        options: 
+            visible: true
+    -   name: nom_espece
+        label: Espèce
+        filter: 
+            espece: text
+        options:
+            visible: true
+

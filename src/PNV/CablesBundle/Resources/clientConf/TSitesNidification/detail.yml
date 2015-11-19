@@ -1,0 +1,10 @@
+# editAccess: 3
+# subEditAccess: 2
+# deleteAccess: 5
+groups:
+    -   name: Informations
+        fields:
+            -   name: nom_espece
+                label: "Espèce" 
+                type: string
+

@@ -1,0 +1,40 @@
+<div dw-loading="spinner-tableau" dw-loading-options="{text: 'Chargement des données'}" ng-options="{ text: '', className: 'custom-loading', spinnerOptions: {radius:30, width:8, length: 16, color: '#f0f', direction: -1, speed: 3}}"></div>
+
+<div ng-controller="baseController">
+
+  <div class="contenu col-md-8 col-sm-12 fixed-map" ng-class="{'visibilite' : !affiche }">  
+    <div class="map large" leaflet-map data="geoms" ></div>
+    <button class="btn btn-info device " ng-click="toggle()">X</button>
+  </div>
+
+ <div class="sidebar tableau float-right" ng-class="{'visibilite' : !affiche }">
+    </br></br>
+      <!-- Initialisation des onglets tableau de données -->
+      <div class="with-nav-tabs panel-primary">
+        <div class="padded float-right" ng-controller="TabsManagerCtrl">
+        
+          <accueil class="nav nav-tabs">
+          <!-- Zones sensibles  -->
+            <montab  title="Zones sensibles" template-url="js/templates/cables/zonesSensibles.htm" ng-click="displayLayer('zonessensibles')"></montab>
+          <!-- Cas de mortalités  -->  
+            <montab title="Cas de mortalité" template-url="js/templates/cables/mortalites.htm" disabled="true" ng-click="displayLayer('mortalites')"> </montab>
+          <!-- Inventaires tronçons erdf  -->  
+            <montab title="Tronçons" template-url="js/templates/cables/tronconsErdf.htm" ng-click="displayLayer('tronconserdf')"> </montab>
+          <!-- Inventaires poteaux erdf  -->
+            <montab title="Poteaux" template-url="js/templates/cables/poteauxErdf.htm" ng-click="displayLayer('poteauxerdf')"></montab>
+          <!-- Equipements tronçons erdf   --> 
+            <montab title="Equipements tronçons" template-url="js/templates/cables/eqTronconsErdf.htm" ng-click="displayLayer('eqtronconserdf')"></montab>
+          <!-- Equipements poteaux erdf   --> 
+            <montab title="Equipements poteaux" template-url="js/templates/cables/eqPoteauxErdf.htm"ng-click="displayLayer('eqpoteauxerdf')"></montab>
+          <!-- Sites de nidifications   --> 
+            <montab 
+              title="Site de nidification" template-url="js/templates/cables/nidifications.htm" ng-click="displayLayer('nidifications')"></montab>
+          <!-- Observations  --> 
+            <montab 
+              title="Observations" template-url="js/templates/cables/observations.htm" ng-click="displayLayer('observations')"></montab>
+          </accueil>      
+        </div>
+      </div>
+
+</div>
+</div>

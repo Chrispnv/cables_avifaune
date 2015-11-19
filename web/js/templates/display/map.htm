@@ -1,0 +1,52 @@
+<div dw-loading="map-loading" dw-loading-options="{text: 'Chargement des données'}" ng-options="{ text: '', className: 'custom-loading', spinnerOptions: {radius:30, width:8, length: 16, color: '#f0f', direction: -1, speed: 3}}">
+</div>
+<!-- Initialisation de légende -->
+<div id="legende" class="uk-grid uk-margin-remove">
+    <div class="separateur"></div>
+    <div class ="overlay">
+    <div class="base" id="baselayers">
+        <h4 class="uk-margin-top">Fonds de référence</h4>
+        <label class="checkbox">
+            <input id="erdfappareilcoupure" type="checkbox" ng-click="layerToggle()" value="erdfappareilcoupure"><span class="outer"></span> ERDF - Appareils de coupure 
+        </label><br>
+        <label class="checkbox">
+            <input id="ogmcablesremonteesmecaniques" type="checkbox" ng-click="layerToggle()" value="ogmcablesremonteesmecaniques"><span class="outer"></span> OGM - Remontées mécaniques 
+        </label><br>
+        <label class="checkbox">
+            <input id="rtelignes" type="checkbox" ng-click="layerToggle()" value="rtelignes"><span class="outer"></span> RTE - Lignes électriques 
+        </label><br>
+    </div>
+        
+    <div class="separateur"></div>
+    
+        <h4  class="uk-margin-top">Données métier</h4>
+        <label class="checkbox">
+            <input id="zonessensibles" type="checkbox" ng-click="layerToggle()" value="zonessensibles"><span class="outer"></span> Zones sensibles
+        </label><br>
+        <label class="checkbox">
+            <input id="mortalites" type="checkbox" ng-click="layerToggle()" value="mortalites"><span class="outer"></span> Cas de mortalité
+        </label><br>
+        <label class="checkbox">
+            <input id="tronconserdf" type="checkbox" ng-click="layerToggle()" value="tronconserdf"><span class="outer"></span> Tronçons ERDF à risque 
+        </label><br>
+        <label class="checkbox">
+            <input id="poteauxerdf" type="checkbox" ng-click="layerToggle()" value="poteauxerdf"><span class="outer"></span> Poteaux ERDF à risque 
+        </label><br>
+        <label class="checkbox">
+            <input id="eqtronconserdf" type="checkbox" ng-click="layerToggle()" value="eqtronconserdf"><span class="outer"></span> Equipement tronçons ERDF 
+        </label><br>
+        <label class="checkbox">
+            <input id="eqpoteauxerdf" type="checkbox" ng-click="layerToggle()" value="eqpoteauxerdf"><span class="outer"></span> Equipement poteaux ERDF 
+        </label><br>
+        <label class="checkbox">
+            <input id="nidifications" type="checkbox" ng-click="layerToggle()" value="nidifications"><span class="outer"></span> Sites de nidification 
+        </label><br>
+        <label class="checkbox">
+            <input id="observations" type="checkbox" ng-click="layerToggle()" value="observations"><span class="outer"></span> Observations 
+        </label><br>
+        
+    </div>
+</div>
+<div id="mapd"></div> 
+
+
